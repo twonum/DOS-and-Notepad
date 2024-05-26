@@ -1,49 +1,38 @@
 
-## DOS and Notepad
+## DOS and Notepad: Data Structures and Algorithms Project
 
 ### Overview
 
-The "DOS and Notepad" project is a mini-ultimate Excel sheet manager developed in C++. Inspired by the concept of a doubly linked list, the project implements a class structure where each cell in the Excel sheet is represented as a node with four links: up, down, left, and right. By leveraging these links, the system offers functionalities for managing rows, columns, and cell data within the Excel-like environment.
+The "DOS and Notepad" project is a comprehensive implementation of a DOS shell and a text editor similar to Vim. Developed as part of a Data Structures and Algorithms course, the project aims to demonstrate proficiency in linked lists, vectors, and generalized trees. It consists of two main parts: the implementation of a DOS shell and a text editor resembling Vim.
 
-### Objectives
+### Part 1: DOS Shell
 
-The objectives of this project are as follows:
+The DOS shell component replicates the functionality of a command-line interface similar to that of the DOS operating system. It provides various commands for file and directory manipulation, file editing, and system navigation. Key features include:
 
-1. **Efficient Data Management**: Provide tools and functions to efficiently manage cell data, insert rows and columns, and perform operations such as copying, cutting, and pasting data.
+- **File and Directory Operations**: Commands such as `CD`, `DIR`, `MKDIR`, `RMDIR`, and `TREE` allow users to navigate through directories, create and delete directories, and list directory contents.
+- **File Manipulation**: Commands like `CREATE`, `EDIT`, `COPY`, `MOVE`, `DEL`, and `RENAME` enable users to create, edit, copy, move, delete, and rename files.
+- **Text File Editing**: The `EDIT` command loads a text file into a linked list, allowing users to edit the file contents interactively. Features include text insertion, deletion, backspacing, appending, multiline editing, cursor movement, redo, and undo operations.
+- **Printing Queues**: Files can be added to regular and priority-based printing queues using commands such as `PRINT`, `PPRINT`, `QUEUE`, and `PQUEUE`.
+- **Help and Information**: The `HELP` command provides detailed information about available commands and their usage.
 
-2. **Enhanced User Experience**: Offer a user-friendly interface with intuitive functionalities for navigating and manipulating the Excel sheet.
+### Part 2: Notepad Vim
 
-### Key Functions
+The Notepad Vim component implements a text editor similar to Vim, focusing on efficient text editing capabilities using linked lists. Key features include:
 
-The project includes the following key functions within the Mini Excel class:
-
-- **InsertRowAbove()**: Inserts a row above the current cell, adjusting the links of neighboring cells accordingly.
-- **InsertRowBelow()**: Inserts a row below the current cell, updating the links of adjacent cells as needed.
-- **InsertColumnToRight()**: Inserts a column to the right of the current cell, managing the links of neighboring cells appropriately.
-- **InsertColumnToLeft()**: Inserts a column to the left of the current cell, adjusting the links of adjacent cells as necessary.
-- **InsertCellByRightShift()**: Shifts the current cell to the right and adds a new cell in its place, resulting in the insertion of a new column.
-- **InsertCellByDownShift()**: Shifts the current cell down and adds a new cell in its place, leading to the insertion of a new row.
-- **DeleteCellByLeftShift()**: Deletes the current cell and left shifts all cells to its right within the same row.
-- **DeleteCellByUpShift()**: Deletes the current cell and shifts all cells below it within the same column one step up.
-- **DeleteColumn()**: Deletes the column of the current cell, updating the links of involved cells accordingly.
-- **DeleteRow()**: Deletes the row of the current cell, adjusting the links of involved cells accordingly.
-- **GetRangeSum()**: Computes the sum of values within a specified range of cells.
-- **GetRangeAverage()**: Calculates the average of values within a specified range of cells.
-- **Iterator Class**: Implements iterators for navigating the Excel sheet in all four directions.
+- **Linked List Representation**: The entire document is represented as a linked list of characters, allowing for efficient editing and manipulation.
+- **Text Editing Features**: Users can insert, delete, append, and modify text with support for cursor movement, undo, and redo operations.
+- **Interactive Editing**: Text editing is performed interactively, with support for multiline editing and navigation.
+- **Vim-like Interface**: The text editor interface is designed to resemble Vim, providing a familiar environment for users familiar with the Vim text editor.
 
 ### Usage
 
-1. **Compilation**: Compile the source code using a C++ compiler such as GCC or Visual Studio.
-2. **Execution**: Run the compiled executable file to launch the application.
-3. **Interface**: Utilize the console-based interface to interact with the Excel-like environment and perform various operations.
+1. **Compilation**: Compile the source code using a C++ compiler.
+2. **Execution**: Run the compiled executable file to launch the DOS shell or text editor.
+3. **Interface**: Interact with the command-line interface of the DOS shell or the text editor interface to perform various operations.
 
-### File Handling
+### Deadline and Acknowledgments
 
-The project includes functionalities for saving and loading Excel sheets, enabling users to store and retrieve data efficiently.
-
-### Bonus Features
-
-Additional functionalities include resetting cell width and height when inserting characters exceeding cell dimensions.
+The project was completed as part of a Data Structures and Algorithms course, with a deadline of 18/12/2023. Special thanks to Dr. Zeeshan Rana and Dr. Atif Mehdi for their contributions and guidance in developing this project.
 
 ### License
 
